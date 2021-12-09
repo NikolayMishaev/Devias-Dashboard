@@ -1,0 +1,42 @@
+.header {
+  min-height: 64px;
+  background-color: $white;
+  @include flex-center;
+  box-shadow: 0px 2px 4px rgba(31, 41, 55, 0.06),
+    0px 4px 6px rgba(100, 116, 139, 0.12);
+  padding: 0 24px;
+  &__link {
+    color: $pale-sky;
+    transition: $transition;
+    &:hover {
+      @include hover;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    @include flex-end;
+  }
+  &__item {
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    @include flex-center;
+    margin-right: 16px;
+  }
+  &__column {
+    &_left {
+      flex: 1;
+    }
+    &_right {
+      @include flex-center;
+    }
+  }
+  &__profile {
+    transition: $transition;
+    &:hover {
+      @include hover;
+    }
+  }
+}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA;EACE,UAAU;EACV,eAAe,EAAE","file":"styles.css","sourcesContent":["body {\n  color: red;\n  font-size: 10px; }\n"]}

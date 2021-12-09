@@ -1,31 +1,44 @@
 {
-  "name": "devias-dashboard",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "scss": "node-sass --output-style compressed -o dist/css src/scss",
-    "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
-    "watch:css": "node-sass --watch src/scss -o dist/css ",
-    "start": "run-p serve watch:css",
-    "autoprefixer": "postcss dist/css/*.css --use autoprefixer --map=false -b 'last 2 versions' -d dist/css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NikolayMishaev/Devias-Dashboard.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NikolayMishaev/Devias-Dashboard/issues"
-  },
-  "homepage": "https://github.com/NikolayMishaev/Devias-Dashboard#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "browser-sync": "^2.27.7",
-    "node-sass": "^7.0.0",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.4",
-    "postcss-cli": "^9.0.2"
-  }
+    "name": "devias-dashboard",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "develop": "webpack --env.mode=development --progress --watch",
+        "build": "webpack --env.mode=production",
+        "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
+        "start": "run-p serve develop"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "normalize.css": "^8.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.4",
+        "@babel/plugin-transform-classes": "^7.10.4",
+        "@babel/preset-env": "^7.11.0",
+        "@webpack-cli/serve": "^1.6.0",
+        "are-you-es5": "^2.1.1",
+        "autoprefixer": "^9.8.6",
+        "babel-loader": "^8.1.0",
+        "browser-sync": "^2.27.7",
+        "copy-webpack-plugin": "^6.0.3",
+        "css-loader": "^3.6.0",
+        "cssnano": "^4.1.10",
+        "file-loader": "^6.0.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "node-sass": "^4.14.1",
+        "npm-run-all": "^4.1.5",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "postcss-loader": "^3.0.0",
+        "regenerator-runtime": "^0.13.7",
+        "sass-loader": "^8.0.2",
+        "style-loader": "^1.2.1",
+        "svg-sprite-loader": "^5.0.0",
+        "svgo": "^1.3.2",
+        "svgo-loader": "^2.2.1",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
+    }
 }

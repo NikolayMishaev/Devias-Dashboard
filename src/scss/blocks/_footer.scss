@@ -1,0 +1,27 @@
+.footer {
+  padding: 0 48px 24px;
+  &::before {
+    content: "";
+    border-top: 1px solid $athens-gray;
+    display: block;
+  }
+  &__about {
+    color: $ebony;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 157%;
+    margin: 8px 0;
+  }
+  &__text {
+    color: $pale-sky;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 157%;
+    margin: 0;
+  }
+  &__accent {
+    text-decoration-line: underline;
+  }
+}
