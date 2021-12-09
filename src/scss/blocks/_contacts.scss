@@ -42,6 +42,7 @@
     width: 20%;
     list-style-type: none;
     overflow: scroll;
+    white-space: nowrap;
     &::-webkit-scrollbar {
       display: none;
     }
