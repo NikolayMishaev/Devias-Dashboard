@@ -1,15 +1,20 @@
-# Devias dashboard
+# Верстка страницы «Devias dashboard»
 ***
-- [ссылка на gh-pages](https://nikolaymishaev.github.io/devias-dashboard/index.html)
-- [ссылка на макет](https://www.figma.com/file/p7TfDOlPSRfHBM5o2TpkrT/Devias-Dashboard-Design-Library-Kit)
-- [ссылка на задание](https://disk.yandex.ru/i/_-QwRm-Zf-qeZw)
+- [gh-pages](https://nikolaymishaev.github.io/devias-dashboard/index.html)
+- [макет](https://www.figma.com/file/p7TfDOlPSRfHBM5o2TpkrT/Devias-Dashboard-Design-Library-Kit)
+- [задание](https://disk.yandex.ru/i/_-QwRm-Zf-qeZw)
 
 ## Описание
 - верстка одной тестовой страницы из макета по ТЗ.
 
-## Функциональность
-- настроена сборка Webpack
-- используется SCSS, БЭМ
+## ТЕХНОЛОГИИ
+- HTML
+- Webpack
+- используется SCSS
+- БЭМ
+
+## ФУНКЦИОНАЛЬНОСТЬ
+- адаптивная верстка
 
 ## Планы по доработке проекта
 - доверстать все страницы сайта
